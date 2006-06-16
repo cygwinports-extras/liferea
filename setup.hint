@@ -1,0 +1,10 @@
+category: Gnome Web
+requires: cygwin atk GConf2 gtk2-x11 libICE6 libSM6 libX11_6 libdbus1_2 libdbus-glib_1_2 libgtkhtml2 libxml2
+sdesc: "News feed reader for GNOME"
+ldesc: "Liferea is an abbreviation for Linux Feed Reader. It is a news
+aggregator for online news feeds. It supports a number of different
+feed formats including RSS/RDF, CDF, Atom, OCS, and OPML. There are
+many other news readers available, but these others are not available
+for Linux or require many extra libraries to be installed. Liferea
+tries to fill this gap by creating a fast, easy to use, easy to
+install news aggregator for GTK/GNOME."

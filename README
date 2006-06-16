@@ -1,0 +1,237 @@
+liferea
+-------------------------------------------
+Liferea is an abbreviation for Linux Feed Reader. It is a news
+aggregator for online news feeds. It supports a number of different
+feed formats including RSS/RDF, CDF, Atom, OCS, and OPML. There are
+many other news readers available, but these others are not available
+for Linux or require many extra libraries to be installed. Liferea
+tries to fill this gap by creating a fast, easy to use, easy to
+install news aggregator for GTK/GNOME.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  GConf2-2.14.0-1
+  atk-1.10.3-1
+  gtk2-x11-2.8.17-1
+  libICE6-1.0.0-1
+  libSM6-1.0.0-1
+  libX11_6-1.0.0-2
+  libdbus-glib_1_2-0.60-1
+  libdbus1_2-0.60-1
+  libgtkhtml2-2.6.3-2
+  libxml2-2.6.24-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.1.93-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.22-1
+  make-3.80-1
+  pkg-config-0.20-1
+  sed-4.1.4-1
+
+Canonical homepage:
+  http://liferea.sourceforge.net/
+
+Canonical download:
+  http://prdownloads.sourceforge.net/liferea/
+
+-------------------------------------------
+
+Build instructions:
+  unpack liferea-1.0.11-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./liferea-1.0.11-1.cygport all
+
+This will create:
+  /usr/src/liferea-1.0.11-1-src.tar.bz2
+  /usr/src/liferea-1.0.11-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/gconf/schemas/liferea.schemas
+  /etc/postinstall/liferea.sh
+  /etc/preremove/liferea.sh
+  /usr/bin/liferea
+  /usr/bin/liferea-bin.exe
+  /usr/lib/liferea/cyglihtmlg.dll
+  /usr/lib/liferea/liblihtmlg.la
+  /usr/share/applications/liferea.desktop
+  /usr/share/doc/Cygwin/liferea-1.0.13.README
+  /usr/share/doc/liferea-1.0.13/AUTHORS
+  /usr/share/doc/liferea-1.0.13/COPYING
+  /usr/share/doc/liferea-1.0.13/ChangeLog
+  /usr/share/doc/liferea-1.0.13/INSTALL
+  /usr/share/doc/liferea-1.0.13/NEWS
+  /usr/share/doc/liferea-1.0.13/README
+  /usr/share/liferea/css/adblock.css
+  /usr/share/liferea/css/liferea.css
+  /usr/share/liferea/css/liferea2.css
+  /usr/share/liferea/doc/html/about_de.html
+  /usr/share/liferea/doc/html/about_en.html
+  /usr/share/liferea/doc/html/enclosures_de.html
+  /usr/share/liferea/doc/html/enclosures_en.html
+  /usr/share/liferea/doc/html/faq_de.html
+  /usr/share/liferea/doc/html/faq_en.html
+  /usr/share/liferea/doc/html/faq_ja.html
+  /usr/share/liferea/doc/html/folders_de.html
+  /usr/share/liferea/doc/html/folders_en.html
+  /usr/share/liferea/doc/html/headlines_de.html
+  /usr/share/liferea/doc/html/headlines_en.html
+  /usr/share/liferea/doc/html/help_feed_available.png
+  /usr/share/liferea/doc/html/help_feed_error.png
+  /usr/share/liferea/doc/html/help_feed_ocs.png
+  /usr/share/liferea/doc/html/help_feed_prop_auth_1.0.0.png
+  /usr/share/liferea/doc/html/help_feed_prop_cache_1.0.0.png
+  /usr/share/liferea/doc/html/help_feed_prop_enclosures_1.0.0.png
+  /usr/share/liferea/doc/html/help_feed_prop_general_1.0.0.png
+  /usr/share/liferea/doc/html/help_feed_prop_source_1.0.0.png
+  /usr/share/liferea/doc/html/help_item_flag.png
+  /usr/share/liferea/doc/html/help_prefs_browser_1.0.0.png
+  /usr/share/liferea/doc/html/help_prefs_enclosures_1.0.0.png
+  /usr/share/liferea/doc/html/help_prefs_feeds_1.0.0.png
+  /usr/share/liferea/doc/html/help_prefs_folders_1.0.0.png
+  /usr/share/liferea/doc/html/help_prefs_gui_1.0.0.png
+  /usr/share/liferea/doc/html/help_prefs_headlines_1.0.0.png
+  /usr/share/liferea/doc/html/help_prefs_proxy_1.0.0.png
+  /usr/share/liferea/doc/html/help_search_1.0.0.png
+  /usr/share/liferea/doc/html/help_subscribe_1.0.0.png
+  /usr/share/liferea/doc/html/help_vfolder_1.0.0.png
+  /usr/share/liferea/doc/html/preferences_de.html
+  /usr/share/liferea/doc/html/preferences_en.html
+  /usr/share/liferea/doc/html/reference.css
+  /usr/share/liferea/doc/html/reference_de.html
+  /usr/share/liferea/doc/html/reference_en.html
+  /usr/share/liferea/doc/html/reference_ja.html
+  /usr/share/liferea/doc/html/reference_nl.html
+  /usr/share/liferea/doc/html/searching_de.html
+  /usr/share/liferea/doc/html/searching_en.html
+  /usr/share/liferea/doc/html/subscriptions_de.html
+  /usr/share/liferea/doc/html/subscriptions_en.html
+  /usr/share/liferea/doc/html/topics_de.html
+  /usr/share/liferea/doc/html/topics_en.html
+  /usr/share/liferea/doc/html/topics_ja.html
+  /usr/share/liferea/doc/html/updating_de.html
+  /usr/share/liferea/doc/html/updating_en.html
+  /usr/share/liferea/dtd/html.ent
+  /usr/share/liferea/opml/feedlist.opml
+  /usr/share/liferea/opml/feedlist_de.opml
+  /usr/share/liferea/opml/feedlist_es.opml
+  /usr/share/liferea/opml/feedlist_fr.opml
+  /usr/share/liferea/opml/feedlist_nl.opml
+  /usr/share/liferea/opml/feedlist_pl.opml
+  /usr/share/liferea/opml/feedlist_sk.opml
+  /usr/share/liferea/pixmaps/arrow.png
+  /usr/share/liferea/pixmaps/available.png
+  /usr/share/liferea/pixmaps/available_offline.png
+  /usr/share/liferea/pixmaps/directory.png
+  /usr/share/liferea/pixmaps/edit.png
+  /usr/share/liferea/pixmaps/empty.png
+  /usr/share/liferea/pixmaps/empty_offline.png
+  /usr/share/liferea/pixmaps/flag.png
+  /usr/share/liferea/pixmaps/liferea.png
+  /usr/share/liferea/pixmaps/ocs.png
+  /usr/share/liferea/pixmaps/offline.png
+  /usr/share/liferea/pixmaps/online.png
+  /usr/share/liferea/pixmaps/read.xpm
+  /usr/share/liferea/pixmaps/technorati.png
+  /usr/share/liferea/pixmaps/unread.png
+  /usr/share/liferea/pixmaps/vfolder.png
+  /usr/share/locale/bg/LC_MESSAGES/liferea.mo
+  /usr/share/locale/ca/LC_MESSAGES/liferea.mo
+  /usr/share/locale/cs/LC_MESSAGES/liferea.mo
+  /usr/share/locale/de/LC_MESSAGES/liferea.mo
+  /usr/share/locale/es/LC_MESSAGES/liferea.mo
+  /usr/share/locale/fi/LC_MESSAGES/liferea.mo
+  /usr/share/locale/fr/LC_MESSAGES/liferea.mo
+  /usr/share/locale/it/LC_MESSAGES/liferea.mo
+  /usr/share/locale/ja/LC_MESSAGES/liferea.mo
+  /usr/share/locale/ko/LC_MESSAGES/liferea.mo
+  /usr/share/locale/mk/LC_MESSAGES/liferea.mo
+  /usr/share/locale/nl/LC_MESSAGES/liferea.mo
+  /usr/share/locale/pl/LC_MESSAGES/liferea.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/liferea.mo
+  /usr/share/locale/ro/LC_MESSAGES/liferea.mo
+  /usr/share/locale/ru/LC_MESSAGES/liferea.mo
+  /usr/share/locale/sk/LC_MESSAGES/liferea.mo
+  /usr/share/locale/sv/LC_MESSAGES/liferea.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/liferea.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/liferea.mo
+  /usr/share/man/man1/liferea.1.gz
+  /usr/share/pixmaps/liferea.png
+
+------------------
+
+Port Notes:
+
+----- version 1.0.13-1 -----
+Version bump.
+
+----- version 1.0.11-1 -----
+Version bump.
+
+----- version 1.0.10-1 -----
+Version bump.
+
+----- version 1.0.9-1 -----
+Version bump.
+
+----- version 1.0.8-1 -----
+Version bump.
+Source package is now cygport driven.
+
+----- version 1.0.7-1 -----
+Version bump.
+
+----- version 1.0.6-1 -----
+Version bump.
+
+----- version 1.0.4-1 -----
+Version bump.
+
+----- version 1.0.3-1 -----
+Version bump.
+
+----- version 1.0.2-1 -----
+Version bump.
+
+----- version 1.0.1-1 -----
+Version bump.
+
+----- version 1.0-1 -----
+Version bump.
+
+----- version 1.0_RC4-1 -----
+Version bump.
+
+----- version 1.0_RC3-1 -----
+Version bump.
+
+----- version 1.0_RC2-1 -----
+Version bump.
+Cygwin patches accepted upstream; only GConf schemas needed to be patched.
+
+----- version 0.9.7b-1 -----
+Version bump.
+
+----- version 0.9.5-1 -----
+Version bump.
+
+----- version 0.9.0b-1 -----
+Initial release for Cygwin.
+Changes were made to the lock code and the GConf schemas (correcting 
+the default HTML module and disabling the new subscription pipe) so that 
+the program should work correctly upon install.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
