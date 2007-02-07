@@ -9,12 +9,12 @@ tries to fill this gap by creating a fast, easy to use, easy to
 install news aggregator for GTK/GNOME.
 
 Runtime requirements:
-  cygwin-1.5.23-2
+  cygwin-1.5.24-2
   GConf2-2.16.0-1
   atk-1.12.4-1
-  gdk-pixbuf2-2.10.7-1
-  glib2-2.12.7-1
-  gtk2-x11-2.10.7-1
+  gdk-pixbuf2-2.10.9-1
+  glib2-2.12.9-1
+  gtk2-x11-2.10.9-1
   libICE6-1.0.2-1
   libSM6-1.0.2-1
   libX11_6-1.1.1-1
@@ -33,7 +33,7 @@ Runtime requirements:
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.23-2
+  cygwin-1.5.24-2
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
@@ -54,15 +54,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack liferea-1.2.4-1-src.tar.bz2
+  unpack liferea-1.2.5-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./liferea-1.2.4-1.cygport all
+  cygport ./liferea-1.2.5-1.cygport all
 
 This will create:
-  /usr/src/liferea-1.2.4-1-src.tar.bz2
-  /usr/src/liferea-1.2.4-1.tar.bz2
+  /usr/src/liferea-1.2.5-1-src.tar.bz2
+  /usr/src/liferea-1.2.5-1.tar.bz2
 
 -------------------------------------------
 
@@ -81,13 +81,13 @@ Files included in the binary package:
   /usr/lib/liferea/liblinotifpopup.la
   /usr/lib/liferea/libliscrlua.la
   /usr/share/applications/liferea.desktop
-  /usr/share/doc/Cygwin/liferea-1.2.4.README
-  /usr/share/doc/liferea-1.2.4/AUTHORS
-  /usr/share/doc/liferea-1.2.4/COPYING
-  /usr/share/doc/liferea-1.2.4/ChangeLog
-  /usr/share/doc/liferea-1.2.4/INSTALL
-  /usr/share/doc/liferea-1.2.4/NEWS
-  /usr/share/doc/liferea-1.2.4/README
+  /usr/share/doc/Cygwin/liferea-1.2.5.README
+  /usr/share/doc/liferea-1.2.5/AUTHORS
+  /usr/share/doc/liferea-1.2.5/COPYING
+  /usr/share/doc/liferea-1.2.5/ChangeLog
+  /usr/share/doc/liferea-1.2.5/INSTALL
+  /usr/share/doc/liferea-1.2.5/NEWS
+  /usr/share/doc/liferea-1.2.5/README
   /usr/share/icons/hicolor/48x48/apps/liferea.png
   /usr/share/liferea/css/adblock.css
   /usr/share/liferea/css/liferea.css
@@ -203,6 +203,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.2.5-1 -----
+Version bump.
 
 ----- version 1.2.4-1 -----
 Major version bump.
