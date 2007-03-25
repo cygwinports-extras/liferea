@@ -54,15 +54,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack liferea-1.2.8-1-src.tar.bz2
+  unpack liferea-1.2.9-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./liferea-1.2.8-1.cygport all
+  cygport ./liferea-1.2.9-1.cygport all
 
 This will create:
-  /usr/src/liferea-1.2.8-1-src.tar.bz2
-  /usr/src/liferea-1.2.8-1.tar.bz2
+  /usr/src/liferea-1.2.9-1-src.tar.bz2
+  /usr/src/liferea-1.2.9-1.tar.bz2
 
 -------------------------------------------
 
@@ -81,13 +81,13 @@ Files included in the binary package:
   /usr/lib/liferea/liblinotifpopup.la
   /usr/lib/liferea/libliscrlua.la
   /usr/share/applications/liferea.desktop
-  /usr/share/doc/Cygwin/liferea-1.2.8.README
-  /usr/share/doc/liferea-1.2.8/AUTHORS
-  /usr/share/doc/liferea-1.2.8/COPYING
-  /usr/share/doc/liferea-1.2.8/ChangeLog
-  /usr/share/doc/liferea-1.2.8/INSTALL
-  /usr/share/doc/liferea-1.2.8/NEWS
-  /usr/share/doc/liferea-1.2.8/README
+  /usr/share/doc/Cygwin/liferea-1.2.9.README
+  /usr/share/doc/liferea-1.2.9/AUTHORS
+  /usr/share/doc/liferea-1.2.9/COPYING
+  /usr/share/doc/liferea-1.2.9/ChangeLog
+  /usr/share/doc/liferea-1.2.9/INSTALL
+  /usr/share/doc/liferea-1.2.9/NEWS
+  /usr/share/doc/liferea-1.2.9/README
   /usr/share/icons/hicolor/48x48/apps/liferea.png
   /usr/share/liferea/css/adblock.css
   /usr/share/liferea/css/liferea.css
@@ -203,6 +203,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.2.9-1 -----
+Version bump.
 
 ----- version 1.2.8-1 -----
 Version bump.
