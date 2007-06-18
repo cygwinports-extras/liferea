@@ -10,11 +10,11 @@ install news aggregator for GTK/GNOME.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  GConf2-2.16.0-1
-  atk-1.12.4-1
-  gdk-pixbuf2-2.10.9-1
-  glib2-2.12.9-1
-  gtk2-x11-2.10.9-1
+  GConf2-2.18.0.1-1
+  atk-1.18.0-1
+  gdk-pixbuf2-2.10.12-1
+  glib2-2.12.12-1
+  gtk2-x11-2.10.12-1
   libICE6-1.0.2-1
   libSM6-1.0.2-1
   libX11_6-1.1.1-1
@@ -24,9 +24,10 @@ Runtime requirements:
   libgnutls11-1.0.25-2
   libgtkhtml2-2.11.0-1
   libintl8-0.15-1
+  libnotify-0.4.4-1
   libxml2-2.6.27-1
   libxslt-1.1.20-1
-  lua50-5.0.2-1
+  lua51-5.1.2-1
   minires-1.01-1
   pango-1.14.10-1
   zlib-1.2.3-2
@@ -54,15 +55,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack liferea-1.2.13-1-src.tar.bz2
+  unpack liferea-1.2.17-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./liferea-1.2.13-1.cygport all
+  cygport ./liferea-1.2.17-1.cygport all
 
 This will create:
-  /usr/src/liferea-1.2.13-1-src.tar.bz2
-  /usr/src/liferea-1.2.13-1.tar.bz2
+  /usr/src/liferea-1.2.17-1-src.tar.bz2
+  /usr/src/liferea-1.2.17-1.tar.bz2
 
 -------------------------------------------
 
@@ -75,19 +76,21 @@ Files included in the binary package:
   /usr/bin/liferea-add-feed
   /usr/bin/liferea-bin.exe
   /usr/lib/liferea/cyglihtmlg.dll
+  /usr/lib/liferea/cyglinotiflibnotify.dll
   /usr/lib/liferea/cyglinotifpopup.dll
   /usr/lib/liferea/cygliscrlua.dll
   /usr/lib/liferea/liblihtmlg.la
+  /usr/lib/liferea/liblinotiflibnotify.la
   /usr/lib/liferea/liblinotifpopup.la
   /usr/lib/liferea/libliscrlua.la
   /usr/share/applications/liferea.desktop
-  /usr/share/doc/Cygwin/liferea-1.2.13.README
-  /usr/share/doc/liferea-1.2.13/AUTHORS
-  /usr/share/doc/liferea-1.2.13/COPYING
-  /usr/share/doc/liferea-1.2.13/ChangeLog
-  /usr/share/doc/liferea-1.2.13/INSTALL
-  /usr/share/doc/liferea-1.2.13/NEWS
-  /usr/share/doc/liferea-1.2.13/README
+  /usr/share/doc/Cygwin/liferea-1.2.17.README
+  /usr/share/doc/liferea-1.2.17/AUTHORS
+  /usr/share/doc/liferea-1.2.17/COPYING
+  /usr/share/doc/liferea-1.2.17/ChangeLog
+  /usr/share/doc/liferea-1.2.17/INSTALL
+  /usr/share/doc/liferea-1.2.17/NEWS
+  /usr/share/doc/liferea-1.2.17/README
   /usr/share/icons/hicolor/48x48/apps/liferea.png
   /usr/share/liferea/css/adblock.css
   /usr/share/liferea/css/liferea.css
@@ -203,6 +206,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.2.17-1 -----
+Version bump; enabled libnotify support.
 
 ----- version 1.2.13-1 -----
 Version bump.
