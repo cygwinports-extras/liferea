@@ -29,7 +29,7 @@ Runtime requirements:
   libxslt-1.1.20-1
   lua51-5.1.2-1
   minires-1.01-1
-  pango-1.16.4-1
+  pango-1.16.5-1
   zlib-1.2.3-2
 
 Build requirements:
@@ -55,15 +55,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack liferea-1.2.21-1-src.tar.bz2
+  unpack liferea-1.2.22-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./liferea-1.2.21-1.cygport all
+  cygport ./liferea-1.2.22-1.cygport all
 
 This will create:
-  /usr/src/liferea-1.2.21-1-src.tar.bz2
-  /usr/src/liferea-1.2.21-1.tar.bz2
+  /usr/src/liferea-1.2.22-1-src.tar.bz2
+  /usr/src/liferea-1.2.22-1.tar.bz2
 
 -------------------------------------------
 
@@ -84,13 +84,13 @@ Files included in the binary package:
   /usr/lib/liferea/liblinotifpopup.la
   /usr/lib/liferea/libliscrlua.la
   /usr/share/applications/liferea.desktop
-  /usr/share/doc/Cygwin/liferea-1.2.21.README
-  /usr/share/doc/liferea-1.2.21/AUTHORS
-  /usr/share/doc/liferea-1.2.21/COPYING
-  /usr/share/doc/liferea-1.2.21/ChangeLog
-  /usr/share/doc/liferea-1.2.21/INSTALL
-  /usr/share/doc/liferea-1.2.21/NEWS
-  /usr/share/doc/liferea-1.2.21/README
+  /usr/share/doc/Cygwin/liferea-1.2.22.README
+  /usr/share/doc/liferea-1.2.22/AUTHORS
+  /usr/share/doc/liferea-1.2.22/COPYING
+  /usr/share/doc/liferea-1.2.22/ChangeLog
+  /usr/share/doc/liferea-1.2.22/INSTALL
+  /usr/share/doc/liferea-1.2.22/NEWS
+  /usr/share/doc/liferea-1.2.22/README
   /usr/share/icons/hicolor/48x48/apps/liferea.png
   /usr/share/liferea/css/adblock.css
   /usr/share/liferea/css/liferea.css
@@ -192,6 +192,7 @@ Files included in the binary package:
   /usr/share/liferea/xslt/vfolder.xml
   /usr/share/liferea/xslt/vfolder.xml.in
   /usr/share/locale/ar/LC_MESSAGES/liferea.mo
+  /usr/share/locale/be@latin/LC_MESSAGES/liferea.mo
   /usr/share/locale/de/LC_MESSAGES/liferea.mo
   /usr/share/locale/es/LC_MESSAGES/liferea.mo
   /usr/share/locale/fr/LC_MESSAGES/liferea.mo
@@ -206,6 +207,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.2.22-1 -----
+Version bump.
 
 ----- version 1.2.21-1 -----
 Version bump.
