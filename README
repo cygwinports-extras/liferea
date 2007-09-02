@@ -18,15 +18,17 @@ Runtime requirements:
   libICE6-1.0.3-1
   libSM6-1.0.3-1
   libX11_6-1.1.3-1
-  libdbus-glib_1_2-0.73-1
-  libdbus1_3-1.0.2-1
+  libcairo2-1.4.10-1
+  libdbus-glib_1_2-0.74-1
   libgcrypt11-1.2.4-1
+  libglade2-2.6.1-1
   libgnutls13-1.6.3-1
   libgtkhtml2-2.11.0-1
   libintl8-0.15-1
   libnotify-0.4.4-1
+  libsqlite3_0-3.3.17-1
   libxml2-2.6.29-1
-  libxslt-1.1.20-1
+  libxslt-1.1.20-2
   lua51-5.1.2-1
   minires-1.01-1
   pango-1.16.5-1
@@ -55,15 +57,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack liferea-1.2.22-1-src.tar.bz2
+  unpack liferea-1.4.0-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./liferea-1.2.22-1.cygport all
+  cygport ./liferea-1.4.0-1.cygport all
 
 This will create:
-  /usr/src/liferea-1.2.22-1-src.tar.bz2
-  /usr/src/liferea-1.2.22-1.tar.bz2
+  /usr/src/liferea-1.4.0-1-src.tar.bz2
+  /usr/src/liferea-1.4.0-1.tar.bz2
 
 -------------------------------------------
 
@@ -77,21 +79,20 @@ Files included in the binary package:
   /usr/bin/liferea-bin.exe
   /usr/lib/liferea/cyglihtmlg.dll
   /usr/lib/liferea/cyglinotiflibnotify.dll
-  /usr/lib/liferea/cyglinotifpopup.dll
   /usr/lib/liferea/cygliscrlua.dll
   /usr/lib/liferea/liblihtmlg.la
   /usr/lib/liferea/liblinotiflibnotify.la
-  /usr/lib/liferea/liblinotifpopup.la
   /usr/lib/liferea/libliscrlua.la
   /usr/share/applications/liferea.desktop
-  /usr/share/doc/Cygwin/liferea-1.2.22.README
-  /usr/share/doc/liferea-1.2.22/AUTHORS
-  /usr/share/doc/liferea-1.2.22/COPYING
-  /usr/share/doc/liferea-1.2.22/ChangeLog
-  /usr/share/doc/liferea-1.2.22/INSTALL
-  /usr/share/doc/liferea-1.2.22/NEWS
-  /usr/share/doc/liferea-1.2.22/README
+  /usr/share/doc/Cygwin/liferea-1.4.0.README
+  /usr/share/doc/liferea-1.4.0/AUTHORS
+  /usr/share/doc/liferea-1.4.0/COPYING
+  /usr/share/doc/liferea-1.4.0/ChangeLog
+  /usr/share/doc/liferea-1.4.0/INSTALL
+  /usr/share/doc/liferea-1.4.0/NEWS
+  /usr/share/doc/liferea-1.4.0/README
   /usr/share/icons/hicolor/48x48/apps/liferea.png
+  /usr/share/liferea/bloglines_source.glade
   /usr/share/liferea/css/adblock.css
   /usr/share/liferea/css/liferea.css
   /usr/share/liferea/doc/html/about_de.html
@@ -109,25 +110,28 @@ Files included in the binary package:
   /usr/share/liferea/doc/html/headlines_en.html
   /usr/share/liferea/doc/html/help_feed_default.png
   /usr/share/liferea/doc/html/help_feed_error.png
-  /usr/share/liferea/doc/html/help_feed_prop_adv_1.2.0.png
-  /usr/share/liferea/doc/html/help_feed_prop_cache_1.2.0.png
-  /usr/share/liferea/doc/html/help_feed_prop_downl_1.2.0.png
-  /usr/share/liferea/doc/html/help_feed_prop_general_1.2.0.png
-  /usr/share/liferea/doc/html/help_feed_prop_source_1.2.0.png
+  /usr/share/liferea/doc/html/help_feed_prop_adv_1.4.0.png
+  /usr/share/liferea/doc/html/help_feed_prop_cache_1.4.0.png
+  /usr/share/liferea/doc/html/help_feed_prop_downl_1.4.0.png
+  /usr/share/liferea/doc/html/help_feed_prop_general_1.4.0.png
+  /usr/share/liferea/doc/html/help_feed_prop_source_1.4.0.png
   /usr/share/liferea/doc/html/help_folder.png
   /usr/share/liferea/doc/html/help_item_flag.png
   /usr/share/liferea/doc/html/help_item_unread.png
   /usr/share/liferea/doc/html/help_opml.png
-  /usr/share/liferea/doc/html/help_prefs_browser_1.2.0.png
-  /usr/share/liferea/doc/html/help_prefs_enclosures_1.2.0.png
-  /usr/share/liferea/doc/html/help_prefs_feeds_1.2.0.png
-  /usr/share/liferea/doc/html/help_prefs_folders_1.2.0.png
-  /usr/share/liferea/doc/html/help_prefs_gui_1.2.0.png
-  /usr/share/liferea/doc/html/help_prefs_headlines_1.2.0.png
-  /usr/share/liferea/doc/html/help_prefs_proxy_1.2.0.png
-  /usr/share/liferea/doc/html/help_search_1.2.0.png
-  /usr/share/liferea/doc/html/help_subscribe_1.2.0.png
-  /usr/share/liferea/doc/html/help_vfolder_1.2.0.png
+  /usr/share/liferea/doc/html/help_prefs_browser_1.4.0.png
+  /usr/share/liferea/doc/html/help_prefs_enclosures_1.4.0.png
+  /usr/share/liferea/doc/html/help_prefs_feeds_1.4.0.png
+  /usr/share/liferea/doc/html/help_prefs_folders_1.4.0.png
+  /usr/share/liferea/doc/html/help_prefs_gui_1.4.0.png
+  /usr/share/liferea/doc/html/help_prefs_headlines_1.4.0.png
+  /usr/share/liferea/doc/html/help_prefs_proxy_1.4.0.png
+  /usr/share/liferea/doc/html/help_search_1.4.0.png
+  /usr/share/liferea/doc/html/help_source_add_1.4.0.png
+  /usr/share/liferea/doc/html/help_subscribe_1.4.0.png
+  /usr/share/liferea/doc/html/help_vfolder_1.4.0.png
+  /usr/share/liferea/doc/html/newsbin_de.html
+  /usr/share/liferea/doc/html/newsbin_en.html
   /usr/share/liferea/doc/html/preferences_de.html
   /usr/share/liferea/doc/html/preferences_en.html
   /usr/share/liferea/doc/html/reference.css
@@ -145,15 +149,22 @@ Files included in the binary package:
   /usr/share/liferea/doc/html/updating_de.html
   /usr/share/liferea/doc/html/updating_en.html
   /usr/share/liferea/dtd/html.ent
+  /usr/share/liferea/google_source.glade
+  /usr/share/liferea/liferea.glade
   /usr/share/liferea/media/xspf_license.txt
   /usr/share/liferea/media/xspf_player_slim.swf
+  /usr/share/liferea/node_source.glade
   /usr/share/liferea/opml/feedlist.opml
+  /usr/share/liferea/opml/feedlist_ca.opml
   /usr/share/liferea/opml/feedlist_de.opml
   /usr/share/liferea/opml/feedlist_es.opml
+  /usr/share/liferea/opml/feedlist_eu.opml
   /usr/share/liferea/opml/feedlist_fr.opml
   /usr/share/liferea/opml/feedlist_nl.opml
   /usr/share/liferea/opml/feedlist_pl.opml
   /usr/share/liferea/opml/feedlist_sk.opml
+  /usr/share/liferea/opml/feedlist_sv.opml
+  /usr/share/liferea/opml_source.glade
   /usr/share/liferea/pixmaps/arrow.png
   /usr/share/liferea/pixmaps/attachment.png
   /usr/share/liferea/pixmaps/available.png
@@ -165,6 +176,8 @@ Files included in the binary package:
   /usr/share/liferea/pixmaps/edit.png
   /usr/share/liferea/pixmaps/empty.png
   /usr/share/liferea/pixmaps/empty_offline.png
+  /usr/share/liferea/pixmaps/fl_bloglines.png
+  /usr/share/liferea/pixmaps/fl_google.png
   /usr/share/liferea/pixmaps/fl_opml.png
   /usr/share/liferea/pixmaps/flag.png
   /usr/share/liferea/pixmaps/grayflag.png
@@ -193,13 +206,17 @@ Files included in the binary package:
   /usr/share/liferea/xslt/vfolder.xml.in
   /usr/share/locale/ar/LC_MESSAGES/liferea.mo
   /usr/share/locale/be@latin/LC_MESSAGES/liferea.mo
+  /usr/share/locale/ca/LC_MESSAGES/liferea.mo
   /usr/share/locale/de/LC_MESSAGES/liferea.mo
   /usr/share/locale/es/LC_MESSAGES/liferea.mo
+  /usr/share/locale/eu/LC_MESSAGES/liferea.mo
   /usr/share/locale/fr/LC_MESSAGES/liferea.mo
   /usr/share/locale/it/LC_MESSAGES/liferea.mo
   /usr/share/locale/ja/LC_MESSAGES/liferea.mo
   /usr/share/locale/pl/LC_MESSAGES/liferea.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/liferea.mo
+  /usr/share/locale/ru/LC_MESSAGES/liferea.mo
+  /usr/share/locale/sv/LC_MESSAGES/liferea.mo
   /usr/share/locale/tr/LC_MESSAGES/liferea.mo
   /usr/share/man/man1/liferea.1.gz
   /usr/share/man/pl/man1/liferea.1.gz
@@ -207,6 +224,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.4.0-1 -----
+Version bump.
 
 ----- version 1.2.22-1 -----
 Version bump.
