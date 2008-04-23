@@ -9,12 +9,12 @@ tries to fill this gap by creating a fast, easy to use, easy to
 install news aggregator for GTK/GNOME.
 
 Runtime requirements:
-  cygwin-1.5.25-7
+  cygwin-1.5.25-11
   GConf2-2.20.1-1
   atk-1.20.0-1
-  gdk-pixbuf2-2.12.7-1
+  gdk-pixbuf2-2.12.9-1
   glib2-2.14.6-1
-  gtk2-x11-2.12.7-1
+  gtk2-x11-2.12.9-1
   libICE6-1.0.4-1
   libSM6-1.0.3-1
   libX11_6-1.1.3-1
@@ -27,8 +27,8 @@ Runtime requirements:
   libintl8-0.15-1
   libnotify-0.4.4-1
   libsqlite3_0-3.5.2-1
-  libxml2-2.6.30-1
-  libxslt-1.1.22-1
+  libxml2-2.6.32-1
+  libxslt-1.1.23-1
   lua-5.1.3-1
   minires-1.01-1
   pango-1.18.4-1
@@ -56,15 +56,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack liferea-1.4.14-1-src.tar.bz2
+  unpack liferea-1.4.15-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./liferea-1.4.14-1.cygport all
+  cygport ./liferea-1.4.15-1.cygport all
 
 This will create:
-  /usr/src/liferea-1.4.14-1-src.tar.bz2
-  /usr/src/liferea-1.4.14-1.tar.bz2
+  /usr/src/liferea-1.4.15-1-src.tar.bz2
+  /usr/src/liferea-1.4.15-1.tar.bz2
 
 -------------------------------------------
 
@@ -83,12 +83,12 @@ Files included in the binary package:
   /usr/lib/liferea/liblinotiflibnotify.la
   /usr/lib/liferea/libliscrlua.la
   /usr/share/applications/liferea.desktop
-  /usr/share/doc/liferea-1.4.14/AUTHORS
-  /usr/share/doc/liferea-1.4.14/COPYING
-  /usr/share/doc/liferea-1.4.14/ChangeLog
-  /usr/share/doc/liferea-1.4.14/INSTALL
-  /usr/share/doc/liferea-1.4.14/NEWS
-  /usr/share/doc/liferea-1.4.14/README
+  /usr/share/doc/liferea-1.4.15/AUTHORS
+  /usr/share/doc/liferea-1.4.15/COPYING
+  /usr/share/doc/liferea-1.4.15/ChangeLog
+  /usr/share/doc/liferea-1.4.15/INSTALL
+  /usr/share/doc/liferea-1.4.15/NEWS
+  /usr/share/doc/liferea-1.4.15/README
   /usr/share/icons/hicolor/48x48/apps/liferea.png
   /usr/share/liferea/bloglines_source.glade
   /usr/share/liferea/css/adblock.css
@@ -227,6 +227,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.4.15-1 -----
+Version bump.
 
 ----- version 1.4.14-1 -----
 Version bump.
