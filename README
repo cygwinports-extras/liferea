@@ -9,29 +9,29 @@ tries to fill this gap by creating a fast, easy to use, easy to
 install news aggregator for GTK/GNOME.
 
 Runtime requirements:
-  cygwin-1.5.25-11
+  cygwin-1.5.25-15
   GConf2-2.22.0-1
   atk-1.22.0-1
-  gdk-pixbuf2-2.12.9-1
-  glib2-2.16.3-1
-  gtk2-x11-2.12.9-1
+  gdk-pixbuf2-2.12.11-1
+  glib2-2.16.4-1
+  gtk2-x11-2.12.11-1
   libICE6-1.0.4-1
   libSM6-1.0.3-1
   libX11_6-1.1.3-1
   libcairo2-1.6.4-1
-  libdbus-glib_1_2-0.74-1
+  libdbus-glib_1_2-0.76-1
   libgcrypt11-1.4.0-1
   libglade2-2.6.2-1
-  libgnutls13-2.0.4-1
-  libgtkhtml2-2.11.0-1
+  libgnutls26-2.2.2-1
+  libgtkhtml2-2.11.1-1
   libintl8-0.15-1
   libnotify-0.4.4-1
   libsqlite3_0-3.5.9-1
   libxml2-2.6.32-1
-  libxslt-1.1.23-1
+  libxslt-1.1.24-1
   lua-5.1.3-1
   minires-1.01-1
-  pango-1.20.3-1
+  pango-1.20.5-1
   zlib-1.2.3-2
 
 Build requirements:
@@ -39,12 +39,13 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.7-1.7.9-3
   binutils-20060817-1
-  cygport-0.3.11-1
+  cygport-0.3.12-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
+  intltool-0.40.1-1
   libtool-2.2.2-2
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
 
 Canonical homepage:
@@ -56,15 +57,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack liferea-1.4.16b-1-src.tar.bz2
+  unpack liferea-1.4.17-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./liferea-1.4.16b-1.cygport all
+  cygport ./liferea-1.4.17-1.cygport all
 
 This will create:
-  /usr/src/liferea-1.4.16b-1-src.tar.bz2
-  /usr/src/liferea-1.4.16b-1.tar.bz2
+  /usr/src/liferea-1.4.17-1-src.tar.bz2
+  /usr/src/liferea-1.4.17-1.tar.bz2
 
 -------------------------------------------
 
@@ -83,12 +84,12 @@ Files included in the binary package:
   /usr/lib/liferea/liblinotiflibnotify.la
   /usr/lib/liferea/libliscrlua.la
   /usr/share/applications/liferea.desktop
-  /usr/share/doc/liferea-1.4.16b/AUTHORS
-  /usr/share/doc/liferea-1.4.16b/COPYING
-  /usr/share/doc/liferea-1.4.16b/ChangeLog
-  /usr/share/doc/liferea-1.4.16b/INSTALL
-  /usr/share/doc/liferea-1.4.16b/NEWS
-  /usr/share/doc/liferea-1.4.16b/README
+  /usr/share/doc/liferea-1.4.17/AUTHORS
+  /usr/share/doc/liferea-1.4.17/COPYING
+  /usr/share/doc/liferea-1.4.17/ChangeLog
+  /usr/share/doc/liferea-1.4.17/INSTALL
+  /usr/share/doc/liferea-1.4.17/NEWS
+  /usr/share/doc/liferea-1.4.17/README
   /usr/share/icons/hicolor/48x48/apps/liferea.png
   /usr/share/liferea/bloglines_source.glade
   /usr/share/liferea/css/adblock.css
@@ -227,6 +228,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.4.17-1 -----
+Version bump.
 
 ----- version 1.4.16b-1 -----
 Version bump.
