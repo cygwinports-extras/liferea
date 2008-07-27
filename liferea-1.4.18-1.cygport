@@ -1,0 +1,16 @@
+inherit gnome2
+
+DESCRIPTION="GNOME RSS reader"
+HOMEPAGE="http://liferea.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+
+DIFF_EXCLUDES="liferea"
+
+# webkit backend is still experimental :-(
+CYGCONF_ARGS="
+	--enable-libnotify
+	--disable-gecko
+	--disable-nm
+	--disable-webkit
+	--disable-xulrunner
+"

@@ -57,15 +57,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack liferea-1.4.17-1-src.tar.bz2
+  unpack liferea-1.4.18-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./liferea-1.4.17-1.cygport all
+  cygport ./liferea-1.4.18-1.cygport all
 
 This will create:
-  /usr/src/liferea-1.4.17-1-src.tar.bz2
-  /usr/src/liferea-1.4.17-1.tar.bz2
+  /usr/src/liferea-1.4.18-1-src.tar.bz2
+  /usr/src/liferea-1.4.18-1.tar.bz2
 
 -------------------------------------------
 
@@ -84,12 +84,12 @@ Files included in the binary package:
   /usr/lib/liferea/liblinotiflibnotify.la
   /usr/lib/liferea/libliscrlua.la
   /usr/share/applications/liferea.desktop
-  /usr/share/doc/liferea-1.4.17/AUTHORS
-  /usr/share/doc/liferea-1.4.17/COPYING
-  /usr/share/doc/liferea-1.4.17/ChangeLog
-  /usr/share/doc/liferea-1.4.17/INSTALL
-  /usr/share/doc/liferea-1.4.17/NEWS
-  /usr/share/doc/liferea-1.4.17/README
+  /usr/share/doc/liferea-1.4.18/AUTHORS
+  /usr/share/doc/liferea-1.4.18/COPYING
+  /usr/share/doc/liferea-1.4.18/ChangeLog
+  /usr/share/doc/liferea-1.4.18/INSTALL
+  /usr/share/doc/liferea-1.4.18/NEWS
+  /usr/share/doc/liferea-1.4.18/README
   /usr/share/icons/hicolor/48x48/apps/liferea.png
   /usr/share/liferea/bloglines_source.glade
   /usr/share/liferea/css/adblock.css
@@ -229,7 +229,7 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 1.4.17-1 -----
+----- version 1.4.18-1 -----
 Version bump.
 
 ----- version 1.4.16b-1 -----
