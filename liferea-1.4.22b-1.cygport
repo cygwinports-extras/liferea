@@ -3,15 +3,17 @@ inherit gnome2
 DESCRIPTION="GNOME RSS reader"
 HOMEPAGE="http://liferea.sourceforge.net/"
 SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
-PATCH_URI="1.4.18-cygwin.patch"
+PATCH_URI="1.4.18-cygwin.patch
+           1.4.22b-gecko-defines.patch"
 
 DIFF_EXCLUDES="liferea"
 
-# webkit backend is still experimental :-(
+ACLOCAL_FLAGS="-I m4"
+# webkit backend is still experimental in 1.4 branch :-(
 CYGCONF_ARGS="
+	--enable-gtkhtml2
 	--enable-libnotify
 	--disable-gecko
 	--disable-nm
 	--disable-webkit
-	--disable-xulrunner
 "
