@@ -1,0 +1,10 @@
+--- origsrc/liferea-1.6.0-rc1/src/scripting/Makefile.am	2009-02-19 06:10:28.000000000 -0600
++++ src/liferea-1.6.0-rc1/src/scripting/Makefile.am	2009-05-01 18:10:47.717125000 -0500
+@@ -33,6 +33,6 @@ endif
+ LIFEREA_WRAP_CFLAGS=$(PACKAGE_CFLAGS:-pthread=)
+ 
+ liferea_wrap.h: liferea.i
+-	swig -lua $(LIFEREA_WRAP_CFLAGS) -o liferea_wrap.h liferea.i
++	swig -lua $(LIFEREA_WRAP_CFLAGS) -o $@ $<
+ 	
+ endif

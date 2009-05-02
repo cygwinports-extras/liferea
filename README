@@ -9,43 +9,41 @@ tries to fill this gap by creating a fast, easy to use, easy to
 install news aggregator for GTK/GNOME.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libatk1.0_0-1.24.0-1
-  libcairo2-1.8.6-1
-  libdbus-glib_1_2-0.80-1
-  libgconf2_4-2.24.0-1
-  libgcrypt11-1.4.1-4
-  libgdk_pixbuf2.0_0-2.14.7-2
-  libglade2.0_0-2.6.3-2
-  libglib2.0_0-2.18.4-1
-  libgnutls26-2.4.1-1
-  libgtk2.0_0-2.14.7-2
-  libgtkhtml2_0-2.11.1-2
-  libICE6-1.0.4-2
-  libintl8-0.17-2
-  libnotify1-0.4.5-1
-  libpango1.0_0-1.22.4-1
-  libSM6-1.1.0-1
-  libsqlite3_0-3.6.10-1
-  libX11_6-1.1.5-2
-  libxml2-2.7.3-1
-  libxslt-1.1.24-2
-  lua-5.1.3-1
-  minires-1.02-1
-  zlib-1.2.3-2
+  cygwin-1.7.0-45
+  libatk1.0_0-1.26.0-1
+  libcairo2-1.8.6-10
+  libdbus-glib_1_2-0.80-10
+  libgcc1-4.3.2-2
+  libgconf2_4-2.26.0-1
+  libgdk_pixbuf2.0_0-2.16.1-1
+  libglade2.0_0-2.6.4-1
+  libglib2.0_0-2.20.1-1
+  libgtk2.0_0-2.16.1-1
+  libICE6-1.0.5-10
+  libintl8-0.17-10
+  libnotify1-0.4.5-10
+  libpango1.0_0-1.24.1-1
+  libSM6-1.1.0-10
+  libsoup2.4_1-2.26.0-1
+  libsqlite3_0-3.6.11-1
+  libwebkit1.0_2-1.1.3-1
+  libX11_6-1.2-10
+  libxml2-2.7.3-10
+  libxslt-1.1.24-10
+  lua-5.1.4-11
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.7-1.7.9-3
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  intltool-0.40.5-1
-  libtool-2.2.6a-1
-  make-3.81-1
-  pkg-config-0.23a-2
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  intltool-0.40.6-1
+  libtool-2.2.7a-12
+  make-3.81-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical homepage:
@@ -57,15 +55,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack liferea-1.4.26-1-src.tar.bz2
+  unpack liferea-1.6.0_rc1-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./liferea-1.4.26-1.cygport all
+  cygport ./liferea-1.6.0_rc1-1.cygport all
 
 This will create:
-  /usr/src/liferea-1.4.26-1-src.tar.bz2
-  /usr/src/liferea-1.4.26-1.tar.bz2
+  /usr/src/liferea-1.6.0_rc1-1-src.tar.bz2
+  /usr/src/liferea-1.6.0_rc1-1.tar.bz2
 
 -------------------------------------------
 
@@ -74,23 +72,25 @@ Files included in the binary package:
   /etc/gconf/schemas/liferea.schemas
   /etc/postinstall/liferea.sh
   /etc/preremove/liferea.sh
-  /usr/bin/liferea
   /usr/bin/liferea-add-feed
-  /usr/bin/liferea-bin.exe
-  /usr/lib/liferea/cyglihtmlg.dll
+  /usr/bin/liferea.exe
   /usr/lib/liferea/cyglinotiflibnotify.dll
   /usr/lib/liferea/cygliscrlua.dll
-  /usr/lib/liferea/liblihtmlg.la
   /usr/lib/liferea/liblinotiflibnotify.la
   /usr/lib/liferea/libliscrlua.la
   /usr/share/applications/liferea.desktop
-  /usr/share/doc/liferea-1.4.26/AUTHORS
-  /usr/share/doc/liferea-1.4.26/COPYING
-  /usr/share/doc/liferea-1.4.26/ChangeLog
-  /usr/share/doc/liferea-1.4.26/INSTALL
-  /usr/share/doc/liferea-1.4.26/NEWS
-  /usr/share/doc/liferea-1.4.26/README
+  /usr/share/doc/liferea/AUTHORS
+  /usr/share/doc/liferea/COPYING
+  /usr/share/doc/liferea/ChangeLog
+  /usr/share/doc/liferea/NEWS
+  /usr/share/doc/liferea/README
+  /usr/share/icons/hicolor/16x16/apps/liferea.png
+  /usr/share/icons/hicolor/22x22/apps/liferea.png
+  /usr/share/icons/hicolor/24x24/apps/liferea.png
+  /usr/share/icons/hicolor/32x32/apps/liferea.png
   /usr/share/icons/hicolor/48x48/apps/liferea.png
+  /usr/share/icons/hicolor/scalable/apps/liferea.svg
+  /usr/share/liferea/auth.glade
   /usr/share/liferea/bloglines_source.glade
   /usr/share/liferea/css/adblock.css
   /usr/share/liferea/css/liferea.css
@@ -102,7 +102,6 @@ Files included in the binary package:
   /usr/share/liferea/doc/html/enclosures_en.html
   /usr/share/liferea/doc/html/faq_de.html
   /usr/share/liferea/doc/html/faq_en.html
-  /usr/share/liferea/doc/html/faq_ja.html
   /usr/share/liferea/doc/html/folders_de.html
   /usr/share/liferea/doc/html/folders_en.html
   /usr/share/liferea/doc/html/headlines_de.html
@@ -126,7 +125,6 @@ Files included in the binary package:
   /usr/share/liferea/doc/html/help_prefs_headlines_1.4.0.png
   /usr/share/liferea/doc/html/help_prefs_proxy_1.4.0.png
   /usr/share/liferea/doc/html/help_search_1.4.0.png
-  /usr/share/liferea/doc/html/help_source_add_1.4.0.png
   /usr/share/liferea/doc/html/help_subscribe_1.4.0.png
   /usr/share/liferea/doc/html/help_vfolder_1.4.0.png
   /usr/share/liferea/doc/html/newsbin_de.html
@@ -136,22 +134,18 @@ Files included in the binary package:
   /usr/share/liferea/doc/html/reference.css
   /usr/share/liferea/doc/html/reference_de.html
   /usr/share/liferea/doc/html/reference_en.html
-  /usr/share/liferea/doc/html/reference_ja.html
-  /usr/share/liferea/doc/html/reference_nl.html
   /usr/share/liferea/doc/html/searching_de.html
   /usr/share/liferea/doc/html/searching_en.html
   /usr/share/liferea/doc/html/subscriptions_de.html
   /usr/share/liferea/doc/html/subscriptions_en.html
   /usr/share/liferea/doc/html/topics_de.html
   /usr/share/liferea/doc/html/topics_en.html
-  /usr/share/liferea/doc/html/topics_ja.html
   /usr/share/liferea/doc/html/updating_de.html
   /usr/share/liferea/doc/html/updating_en.html
   /usr/share/liferea/dtd/html.ent
   /usr/share/liferea/google_source.glade
   /usr/share/liferea/liferea.glade
-  /usr/share/liferea/media/xspf_license.txt
-  /usr/share/liferea/media/xspf_player_slim.swf
+  /usr/share/liferea/new_subscription.glade
   /usr/share/liferea/node_source.glade
   /usr/share/liferea/opml/feedlist.opml
   /usr/share/liferea/opml/feedlist_bg.opml
@@ -160,6 +154,7 @@ Files included in the binary package:
   /usr/share/liferea/opml/feedlist_es.opml
   /usr/share/liferea/opml/feedlist_eu.opml
   /usr/share/liferea/opml/feedlist_fr.opml
+  /usr/share/liferea/opml/feedlist_it.opml
   /usr/share/liferea/opml/feedlist_nl.opml
   /usr/share/liferea/opml/feedlist_pl.opml
   /usr/share/liferea/opml/feedlist_pt.opml
@@ -184,17 +179,14 @@ Files included in the binary package:
   /usr/share/liferea/pixmaps/fl_google.png
   /usr/share/liferea/pixmaps/fl_opml.png
   /usr/share/liferea/pixmaps/flag.png
-  /usr/share/liferea/pixmaps/grayflag.png
-  /usr/share/liferea/pixmaps/liferea.png
+  /usr/share/liferea/pixmaps/folder_empty.png
   /usr/share/liferea/pixmaps/newsbin.png
-  /usr/share/liferea/pixmaps/ocs.png
-  /usr/share/liferea/pixmaps/offline.png
-  /usr/share/liferea/pixmaps/online.png
   /usr/share/liferea/pixmaps/read.xpm
   /usr/share/liferea/pixmaps/tag.png
   /usr/share/liferea/pixmaps/technorati.png
   /usr/share/liferea/pixmaps/unread.png
   /usr/share/liferea/pixmaps/vfolder.png
+  /usr/share/liferea/simple_subscription.glade
   /usr/share/liferea/xslt/feed.xml
   /usr/share/liferea/xslt/feed.xml.in
   /usr/share/liferea/xslt/folder.xml
@@ -211,15 +203,20 @@ Files included in the binary package:
   /usr/share/locale/ar/LC_MESSAGES/liferea.mo
   /usr/share/locale/be@latin/LC_MESSAGES/liferea.mo
   /usr/share/locale/ca/LC_MESSAGES/liferea.mo
+  /usr/share/locale/cs/LC_MESSAGES/liferea.mo
   /usr/share/locale/de/LC_MESSAGES/liferea.mo
+  /usr/share/locale/el/LC_MESSAGES/liferea.mo
   /usr/share/locale/es/LC_MESSAGES/liferea.mo
   /usr/share/locale/eu/LC_MESSAGES/liferea.mo
   /usr/share/locale/fr/LC_MESSAGES/liferea.mo
+  /usr/share/locale/hu/LC_MESSAGES/liferea.mo
+  /usr/share/locale/it/LC_MESSAGES/liferea.mo
   /usr/share/locale/ja/LC_MESSAGES/liferea.mo
   /usr/share/locale/pl/LC_MESSAGES/liferea.mo
   /usr/share/locale/pt/LC_MESSAGES/liferea.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/liferea.mo
   /usr/share/locale/ru/LC_MESSAGES/liferea.mo
+  /usr/share/locale/sk/LC_MESSAGES/liferea.mo
   /usr/share/locale/sv/LC_MESSAGES/liferea.mo
   /usr/share/locale/tr/LC_MESSAGES/liferea.mo
   /usr/share/man/man1/liferea.1.gz
@@ -229,148 +226,8 @@ Files included in the binary package:
 
 Port Notes:
 
------ version 1.4.26-1 -----
-Version bump.
-
------ version 1.4.24-1 -----
-Version bump.
-
------ version 1.4.23-1 -----
-Version bump.
-
------ version 1.4.22b-1 -----
-Version bump.
-
------ version 1.4.19-1 -----
-Version bump.
-
------ version 1.4.18-1 -----
-Version bump.
-
------ version 1.4.16b-1 -----
-Version bump.
-
------ version 1.4.15-1 -----
-Version bump.
-
------ version 1.4.14-1 -----
-Version bump.
-
------ version 1.4.10-1 -----
-Version bump.
-
------ version 1.4.5b-1 -----
-Version bump.
-
------ version 1.4.3b-1 -----
-Version bump.
-
------ version 1.4.2b-1 -----
-Version bump.
-
------ version 1.4.1-1 -----
-Version bump.
-
------ version 1.2.22-1 -----
-Version bump.
-
------ version 1.2.21-1 -----
-Version bump.
-
------ version 1.2.20-1 -----
-Version bump.
-
------ version 1.2.19-1 -----
-Version bump.
-
------ version 1.2.17-1 -----
-Version bump; enabled libnotify support.
-
------ version 1.2.13-1 -----
-Version bump.
-
------ version 1.2.10-1 -----
-Version bump.
-
------ version 1.2.9-1 -----
-Version bump.
-
------ version 1.2.8-1 -----
-Version bump.
-
------ version 1.2.7-1 -----
-Version bump.
-
------ version 1.2.6-1 -----
-Version bump.
-
------ version 1.2.5-1 -----
-Version bump.
-
------ version 1.2.4-1 -----
-Major version bump.
-
------ version 1.0.16-1 -----
-Version bump.
-
------ version 1.0.13-1 -----
-Version bump.
-
------ version 1.0.11-1 -----
-Version bump.
-
------ version 1.0.10-1 -----
-Version bump.
-
------ version 1.0.9-1 -----
-Version bump.
-
------ version 1.0.8-1 -----
-Version bump.
-Source package is now cygport driven.
-
------ version 1.0.7-1 -----
-Version bump.
-
------ version 1.0.6-1 -----
-Version bump.
-
------ version 1.0.4-1 -----
-Version bump.
-
------ version 1.0.3-1 -----
-Version bump.
-
------ version 1.0.2-1 -----
-Version bump.
-
------ version 1.0.1-1 -----
-Version bump.
-
------ version 1.0-1 -----
-Version bump.
-
------ version 1.0_RC4-1 -----
-Version bump.
-
------ version 1.0_RC3-1 -----
-Version bump.
-
------ version 1.0_RC2-1 -----
-Version bump.
-Cygwin patches accepted upstream; only GConf schemas needed to be patched.
-
------ version 0.9.7b-1 -----
-Version bump.
-
------ version 0.9.5-1 -----
-Version bump.
-
------ version 0.9.0b-1 -----
-Initial release for Cygwin.
-Changes were made to the lock code and the GConf schemas (correcting 
-the default HTML module and disabling the new subscription pipe) so that 
-the program should work correctly upon install.
+----- version 1.6.0_rc1-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

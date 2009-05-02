@@ -1,0 +1,67 @@
+Separate the notification code, which is part of the liferea binary, 
+from the libnotify plugin which depends on, and hence must be built after,
+the liferea binary.
+
+--- origsrc/liferea-1.6.0-rc1/configure.ac	2009-05-01 13:28:44.000000000 -0500
++++ src/liferea-1.6.0-rc1/configure.ac	2009-05-01 18:11:49.560875000 -0500
+@@ -204,6 +204,7 @@ src/Makefile
+ src/webkit/Makefile
+ src/parsers/Makefile
+ src/fl_sources/Makefile
++src/libnotify/Makefile
+ src/notification/Makefile
+ src/scripting/Makefile
+ src/sync/Makefile
+--- origsrc/liferea-1.6.0-rc1/src/Makefile.am	2009-03-19 04:47:23.000000000 -0500
++++ src/liferea-1.6.0-rc1/src/Makefile.am	2009-05-01 18:10:16.560875000 -0500
+@@ -5,7 +5,7 @@ SYNC = sync
+ SYNC_LIB = sync/liblisync.a
+ endif
+ 
+-SUBDIRS = parsers notification ui fl_sources scripting $(SYNC) webkit .
++SUBDIRS = parsers notification ui fl_sources $(SYNC) webkit . libnotify scripting
+ 
+ AM_CPPFLAGS = \
+ 	-DPACKAGE_DATA_DIR=\""$(datadir)"\" \
+--- origsrc/liferea-1.6.0-rc1/src/libnotify/Makefile.am	1969-12-31 18:00:00.000000000 -0600
++++ src/liferea-1.6.0-rc1/src/libnotify/Makefile.am	2009-05-01 18:26:47.014000000 -0500
+@@ -0,0 +1,22 @@
++## Process this file with automake to produce Makefile.in
++
++INCLUDES = \
++	-I$(top_srcdir)/src \
++	$(PACKAGE_CFLAGS)
++
++if WITH_LIBNOTIFY
++
++pkglib_LTLIBRARIES = liblinotiflibnotify.la
++
++# libnotify popup plugin
++liblinotiflibnotify_la_LIBADD = $(PACKAGE_LIBS) $(LIBNOTIFY_LIBS)
++liblinotiflibnotify_la_CFLAGS = $(LIBNOTIFY_CFLAGS)
++liblinotiflibnotify_la_SOURCES = ../notification/libnotify.c ../notification/notification.h
++liblinotiflibnotify_la_LDFLAGS = -avoid-version -module
++
++if PLATFORM_WIN32
++liblinotiflibnotify_la_LDFLAGS += -no-undefined -Wl,$(top_builddir)/src/liferea.a
++liblinotiflibnotify_la_DEPENDENCIES = $(top_builddir)/src/liferea$(EXEEXT)
++endif
++
++endif
+--- origsrc/liferea-1.6.0-rc1/src/notification/Makefile.am	2009-02-16 11:01:50.000000000 -0600
++++ src/liferea-1.6.0-rc1/src/notification/Makefile.am	2009-05-01 18:07:31.342125000 -0500
+@@ -13,14 +13,3 @@ noinst_LIBRARIES = libnotification.a
+ 
+ libnotification_a_SOURCES = notification.c notification.h 
+ libnotification_a_CFLAGS = $(PACKAGE_CFLAGS)
+-
+-if WITH_LIBNOTIFY
+-
+-# libnotify popup plugin
+-liblinotiflibnotify_la_LIBADD = $(PACKAGE_LIBS) $(LIBNOTIFY_LIBS)
+-liblinotiflibnotify_la_CFLAGS = $(PACKAGE_CFLAGS) $(LIBNOTIFY_CFLAGS)
+-liblinotiflibnotify_la_SOURCES = libnotify.c notification.h
+-liblinotiflibnotify_la_LDFLAGS = -avoid-version -module
+-
+-pkglib_LTLIBRARIES = liblinotiflibnotify.la
+-endif
