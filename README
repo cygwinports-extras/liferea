@@ -9,24 +9,24 @@ tries to fill this gap by creating a fast, easy to use, easy to
 install news aggregator for GTK/GNOME.
 
 Runtime requirements:
-  cygwin-1.7.0-45
+  cygwin-1.7.0-51
   libatk1.0_0-1.26.0-1
-  libcairo2-1.8.6-10
+  libcairo2-1.8.8-1
   libdbus-glib_1_2-0.80-10
   libgcc1-4.3.2-2
-  libgconf2_4-2.26.0-1
-  libgdk_pixbuf2.0_0-2.16.1-1
+  libgconf2_4-2.26.2-1
+  libgdk_pixbuf2.0_0-2.16.3-1
   libglade2.0_0-2.6.4-1
-  libglib2.0_0-2.20.1-1
-  libgtk2.0_0-2.16.1-1
+  libglib2.0_0-2.20.4-1
+  libgtk2.0_0-2.16.3-1
   libICE6-1.0.5-10
   libintl8-0.17-10
   libnotify1-0.4.5-10
-  libpango1.0_0-1.24.1-1
+  libpango1.0_0-1.24.3-1
   libSM6-1.1.0-10
-  libsoup2.4_1-2.26.0-1
+  libsoup2.4_1-2.26.3-1
   libsqlite3_0-3.6.11-1
-  libwebkit1.0_2-1.1.3-1
+  libwebkit1.0_2-1.1.10-1
   libX11_6-1.2-10
   libxml2-2.7.3-10
   libxslt-1.1.24-10
@@ -35,13 +35,13 @@ Runtime requirements:
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
+  automake1.10-1.10.2-10
   binutils-20080624-2
-  cygport-0.9.6-1
+  cygport-0.9.8-1
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
   intltool-0.40.6-1
-  libtool-2.2.7a-12
+  libtool-2.2.7a-14
   make-3.81-2
   pkg-config-0.23b-10
   sed-4.1.5-2
@@ -55,15 +55,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack liferea-1.6.0_rc1-1-src.tar.bz2
+  unpack liferea-1.6.0_rc7-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./liferea-1.6.0_rc1-1.cygport all
+  cygport ./liferea-1.6.0_rc7-1.cygport all
 
 This will create:
-  /usr/src/liferea-1.6.0_rc1-1-src.tar.bz2
-  /usr/src/liferea-1.6.0_rc1-1.tar.bz2
+  /usr/src/liferea-1.6.0_rc7-1-src.tar.bz2
+  /usr/src/liferea-1.6.0_rc7-1.tar.bz2
 
 -------------------------------------------
 
@@ -225,6 +225,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 1.6.0_rc7-1 -----
+Version bump.
 
 ----- version 1.6.0_rc1-1 -----
 Initial release for Cygwin 1.7.
