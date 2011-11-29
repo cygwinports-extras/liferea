@@ -2,7 +2,6 @@ inherit gnome2
 
 DESCRIPTION="GNOME RSS reader"
 HOMEPAGE="http://liferea.sourceforge.net/"
-SRC_URI="mirror://sourceforge/${PN}/${P/_/-}.tar.gz"
-SRC_DIR=${P/_/-}
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
 
 CYGCONF_ARGS="--enable-libnotify --enable-sm"
