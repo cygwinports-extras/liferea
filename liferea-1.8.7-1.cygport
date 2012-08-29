@@ -1,0 +1,11 @@
+inherit gnome2
+
+CATEGORY="Gnome Web"
+SUMMARY="GNOME RSS reader"
+DESCRIPTION="Liferea is an abbreviation for Linux Feed Reader for the GNOME
+desktop. It is a news aggregator for online news feeds. It supports a number
+of different feed formats including RSS/RDF, CDF, Atom, OCS, and OPML."
+HOMEPAGE="http://liferea.sourceforge.net/"
+SRC_URI="mirror://sourceforge/${PN}/${P}.tar.gz"
+
+CYGCONF_ARGS="--enable-libnotify --enable-sm"
