@@ -1,5 +1,8 @@
 inherit gnome2
 
+NAME="liferea"
+VERSION=1.8.8
+RELEASE=1
 CATEGORY="Gnome Web"
 SUMMARY="GNOME RSS reader"
 DESCRIPTION="Liferea is an abbreviation for Linux Feed Reader for the GNOME
