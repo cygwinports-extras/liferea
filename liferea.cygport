@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="liferea"
-VERSION=1.8.8
+VERSION=1.8.9
 RELEASE=1
 CATEGORY="Gnome Web"
 SUMMARY="GNOME RSS reader"
