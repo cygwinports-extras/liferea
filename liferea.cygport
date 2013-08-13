@@ -1,14 +1,22 @@
-inherit gnome2
+inherit gnome2 python
 
 NAME="liferea"
-VERSION=1.8.11
+VERSION=1.10.1a
 RELEASE=1
-CATEGORY="Gnome Web"
+CATEGORY="Web"
 SUMMARY="GNOME RSS reader"
 DESCRIPTION="Liferea is an abbreviation for Linux Feed Reader for the GNOME
 desktop. It is a news aggregator for online news feeds. It supports a number
 of different feed formats including RSS/RDF, CDF, Atom, OCS, and OPML."
 HOMEPAGE="http://liferea.sourceforge.net/"
-SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
+SRC_URI="mirror://sourceforge/liferea/liferea-${VERSION}.tar.bz2"
+PATCH_URI="
+	1.10-parallel-make.patch
+	1.10-python.patch
+"
+
+DIFF_EXCLUDES="*.gschema.xml"
+
+REQUIRES="girepository-GnomeKeyring1.0 girepository-Gst1.0 girepository-Gtk3.0 girepository-Peas1.0"
 
 CYGCONF_ARGS="--enable-libnotify --enable-sm"

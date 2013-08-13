@@ -1,0 +1,26 @@
+--- origsrc/liferea-1.10.1a/Makefile.am	2013-06-24 15:55:19.000000000 -0500
++++ src/liferea-1.10.1a/Makefile.am	2013-08-12 22:21:48.638408400 -0500
+@@ -18,10 +18,11 @@ dtd_DATA = dtd/html.ent
+ 
+ plugindir = $(pkglibdir)/plugins
+ plugin_DATA = \
+-	plugins/gnome-keyring.py \
+ 	plugins/gnome-keyring.plugin \
+-	plugins/media-player.py \
+ 	plugins/media-player.plugin
++plugin_PYTHON = \
++	plugins/gnome-keyring.py \
++	plugins/media-player.py
+ 
+ gsettings_SCHEMAS = net.sf.liferea.gschema.xml
+ @INTLTOOL_XML_NOMERGE_RULE@
+--- origsrc/liferea-1.10.1a/configure.ac	2013-07-28 16:43:34.000000000 -0500
++++ src/liferea-1.10.1a/configure.ac	2013-08-12 22:15:23.564383500 -0500
+@@ -21,6 +21,7 @@ AM_PROG_CC_C_O
+ AC_PROG_MAKE_SET
+ AC_SYS_LARGEFILE
+ GLIB_GSETTINGS
++AM_PATH_PYTHON([2.6])
+ 
+ AC_ARG_ENABLE(libnotify, AS_HELP_STRING([--disable-libnotify],[compile without libnotify support]),,enable_libnotify=yes)
+ AC_ARG_ENABLE(libindicate, AS_HELP_STRING([--disable-libindicate],[compile without libindicate support]),,enable_libindicate=yes)
