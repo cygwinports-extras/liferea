@@ -1,7 +1,7 @@
 inherit gnome2 python
 
 NAME="liferea"
-VERSION=1.10.8
+VERSION=1.10.9
 RELEASE=1
 CATEGORY="Web"
 SUMMARY="GNOME RSS reader"
